@@ -3,22 +3,46 @@ const jPDinos = [
     "Tyrannosaurus Rex",
     "Dilophosaurus"
   ];
-  
+
   function seeDinos(a, ...b){
     console.log(a);
     console.log(b);
   }
   seeDinos(...jPDinos);
 
-  console.log("============");
-  
   const jPCharacters = {
     alanGrant: "Sam Neill",
     ellieSattler: "Laura Dern",
     ianMalcolm: "Jeff Goldblum"
   };
-  
+
   seeCharacters = ({ellieSattler}) => {
     console.log(ellieSattler);
   }
-  seeCharacters(jPCharacters); 
+  seeCharacters(jPCharacters);
+  
+  console.log("==========");
+  
+  const jurassicParkMovies = [
+    {
+      one: "Jurassic Park",
+      two: "The Lost World: Jurassic Park",
+      three: "Jurassic Park III"
+    },
+    {
+      four: "Jurassic World",
+      five: "Jurassic World: Fallen Kingdom",
+      six: "Jurassic World: Dominion"
+    }
+  ];
+  
+  seeJPMovies = ([{one, two, three}, {four, five, six}]) => {
+    console.log(one);
+   console.log(two);
+   console.log(three);
+   console.log(four);
+   console.log(five);
+   console.log(six);
+  }
+  seeJPMovies(jurassicParkMovies);
+  
